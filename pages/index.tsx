@@ -3,7 +3,7 @@ import Head from 'next/head'
 import BlogHeader from '../components/blog-header'
 import Container from '../components/container'
 import HeroPost from '../components/hero-post'
-// import IntroTemplate from '../components/intro-template'
+
 import Layout from '../components/layout'
 import MoreStories from '../components/more-stories'
 import { indexQuery, settingsQuery } from '../lib/queries'
@@ -42,7 +42,7 @@ export default function Index({
           )}
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
-        {/* <IntroTemplate /> */}
+
       </Layout>
     </>
   )
