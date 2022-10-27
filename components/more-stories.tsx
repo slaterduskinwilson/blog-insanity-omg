@@ -7,7 +7,7 @@ export default function MoreStories({ posts }: { posts: PostProps[] }) {
       <h2 className="mb-8 text-6xl font-bold leading-tight tracking-tighter md:text-7xl">
         more things to read:
       </h2>
-      <div className="mb-32 flex">
+      <div className="mb-32 m-8 flex flex-row">
         {posts.map((post) => (
           <PostPreview
             key={post.slug}
