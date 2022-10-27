@@ -7,8 +7,10 @@ export default function MoreStories({ posts }: { posts: PostProps[] }) {
       <h2 className="mb-8 text-6xl font-bold leading-tight tracking-tighter md:text-7xl">
         more things to read:
       </h2>
-      <div className="mb-32 m-8 flex flex-row">
+      <div className="m-4 flex flex-row">
         {posts.map((post) => (
+          <div className="p-4">
+
           <PostPreview
             key={post.slug}
             title={post.title}
@@ -17,7 +19,8 @@ export default function MoreStories({ posts }: { posts: PostProps[] }) {
             author={post.author}
             slug={post.slug}
             excerpt={post.excerpt}
-          />
+            />
+            </div>
         ))}
       </div>
     </section>
