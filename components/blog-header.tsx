@@ -7,21 +7,8 @@ export default function BlogHeader({ title }) {
         {title}
       </h1>
       <h4 className="mt-5 text-center text-lg md:pl-8 md:text-left">
-        A statically generated blog example using{' '}
-        <a
-          href="https://nextjs.org/"
-          className="underline transition-colors duration-200 hover:text-success"
-        >
-          Next.js
-        </a>{' '}
-        and{' '}
-        <a
-          href={CMS_URL}
-          className="underline transition-colors duration-200 hover:text-success"
-        >
-          {CMS_NAME}
-        </a>
-        .
+        and you don't have to read any of this, either.
+       
       </h4>
     </section>
   )
